@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Palstine</title>
+</head>
+<body>
+    <script>
+        let body=document.querySelector("body");
+        body.style.margin="0";
+        // flag outside container(parent of the postion)
+        let continer=document.createElement("div");
+        continer.style.width="100%";
+        continer.style.height="100vh";
+        continer.style.position="relative";
+        // add this container to body
+        body.appendChild(continer);
+
+        // make container for black 
+        let blackContainer=document.createElement("div");
+        blackContainer.style.width="100%";
+        blackContainer.style.height="33.3333%";
+        blackContainer.style.backgroundColor="black";
+        blackContainer.style.position="absolute";
+        blackContainer.style.top="0px";
+        continer.appendChild(blackContainer);
+
+        // make container for green 
+        let greenContainer=document.createElement("div");
+        greenContainer.style.width="100%";
+        greenContainer.style.height="33.3333%";
+        greenContainer.style.backgroundColor="green";
+        greenContainer.style.position="absolute";
+        greenContainer.style.bottom="0px";
+        continer.appendChild(greenContainer);
+
+        // red using only borders
+
+        let red=document.createElement("div");
+        red.style.position="absolute";
+        red.style.borderStyle="solid";
+        red.style.borderColor="transparent transparent transparent red"
+        red.style.borderWidth="50vh";
+        continer.appendChild(red);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
